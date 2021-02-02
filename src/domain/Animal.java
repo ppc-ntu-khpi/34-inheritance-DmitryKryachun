@@ -7,22 +7,25 @@ public class Animal {
     protected int weight;
 
     public Animal() {
-        name="generic animal";
-        weight=25;
-    }
-
-    public void eat() {
-        System.out.println("Animal eating...");
+        name = "default name";
+        weight = 10;
     }
 
     public void speak() {
-        System.out.println("Animal speaking...");
+        System.out.println("The animal is talking");
+    }
+
+    public void sleep() {
+        System.out.println("The animal is sleeping");
+        
     }
 
     @Override
     public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+        return "Animal name: " + name + ", \nWeiht: " + weight;
     }
 
- 
+    public void eat() {
+        System.out.println("The animal eats");
+    }
 }
